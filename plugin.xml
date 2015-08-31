@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="pattern-check"
+        version="0.0.1">
+
+  <name>Pattern Check</name>
+  <description>A Cordova plugin that checks whether device pattern enabled or not</description>
+
+  <js-module src="www/patterncheck.js" name="PatternCheck">
+    <clobbers target="PatternCheck" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="PatternCheck">
+        <param name="android-package" value="org.apache.cordova.PatternCheck" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/PatternCheck.java" target-dir="src/org/apache/cordova/patterncheck" />
+  </platform>
+ 
+</plugin>
