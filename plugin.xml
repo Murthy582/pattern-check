@@ -14,7 +14,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="PatternCheck">
-        <param name="android-package" value="org.apache.cordova.PatternCheck" />
+        <param name="android-package" value="org.apache.cordova.patterncheck.PatternCheck" />
         <param name="onload" value="true" />
       </feature>
     </config-file>
