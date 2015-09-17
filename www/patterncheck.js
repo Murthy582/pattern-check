@@ -1,8 +1,12 @@
-module.export = {
+var exec = require("cordova/exec");
 
-	isPatternEnabled:function(successCB,failureCB){
+/**
+ * This is a global variable called exposed by cordova
+ */    
+var patterncheck = function(){};
+
+patterncheck.prototype.isPatternEnabled:function(successCB,failureCB){
 		cordova.exec(successCB, failureCB, "PatternCheck","isPatternEnabled", []);
-	}
-};
+	};
 
- 
+module.exports = new patterncheck();
