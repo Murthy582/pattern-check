@@ -6,7 +6,7 @@
   <name>Pattern Check</name>
   <description>A Cordova plugin that checks whether device pattern enabled or not</description>
 
-  <js-module src="www/patterncheck.js" name="patternCheck">
+  <js-module src="www/patterncheck.js" name="patterncheck">
     <clobbers target="patterncheck" />
   </js-module>
 

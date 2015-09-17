@@ -1,10 +1,6 @@
-var exec = require('cordova/exec');
-
-var patterncheck = {
-
+module.export = {
 	isPatternEnabled:function(successCB,failureCB){
-		exec(successCB, failureCB, "PatternCheck","isPatternEnabled", []);
+		cordova.exec(successCB, failureCB, "PatternCheck","isPatternEnabled", []);
 	}
 };
 
-module.export = patterncheck;
