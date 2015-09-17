@@ -20,9 +20,12 @@ public class PatternCheck extends CordovaPlugin {
 			KeyguardManager km;
 			km = (KeyguardManager)ctx.getSystemService(Context.KEYGUARD_SERVICE);
 			//System.out.println( Settings.Secure.LOCK_PATTERN_ENABLED);
-			System.out.println("^^^"+km.isKeyguardSecure());
-			return km.isKeyguardSecure();
+			String message = ''+km.isKeyguardSecure();
+            callbackContext.success(message);
+			return true;
 	    }
+          else{        
 	    return false;
 	  }
+      }
 }
