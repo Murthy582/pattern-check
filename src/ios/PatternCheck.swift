@@ -1,6 +1,6 @@
 import Foundation
 
- @objc(PCheck) class Hello : CDVPlugin {
+ @objc(PCheck) class PatternCheck : CDVPlugin {
     func greet(command: CDVInvokedUrlCommand) {
         //var message = command.arguments[0] as String
         

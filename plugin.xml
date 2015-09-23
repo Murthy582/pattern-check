@@ -29,7 +29,6 @@ open xcode go into settings change `deployment target` to 7.0 or above and add `
     <config-file target="config.xml" parent="/*">
       <feature name="HellPatternCheck">
         <param name="ios-package" value="PCheck"/>
-        <param name="onload" value="true" />
       </feature>
     </config-file>
     <header-file src="src/ios/Bridging-Header.h" />
