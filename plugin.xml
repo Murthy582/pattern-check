@@ -20,5 +20,20 @@
     </config-file>
     <source-file src="src/android/PatternCheck.java" target-dir="src/org/apache/cordova/patterncheck" />
   </platform>
+    
+    <!-- ios -->
+<platform name="ios">
+    <info>
+open xcode go into settings change `deployment target` to 7.0 or above and add `[Project Name]/Plugins/com.example.hello/Bridging-Header.h` to Objective-c Bridging Header under the Swift Compiler - Code Generation options      
+    </info>
+    <config-file target="config.xml" parent="/*">
+      <feature name="HellPatternCheck">
+        <param name="ios-package" value="PCheck"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/Bridging-Header.h" />
+    <source-file src="src/ios/PatternCheck.swift"/>
+  </platform>
  
 </plugin>
